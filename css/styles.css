@@ -16,6 +16,19 @@ body {
 .list {
     list-style: none;
 }
+/* Hidden headings */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* Header styles */
 .header-link {
     font-family: 'Raleway', sans-serif;
@@ -31,7 +44,7 @@ body {
 }
 /* Navigation styles */
 .navigation-item {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -47,18 +60,12 @@ body {
 .link {
     text-decoration: none;
 }
-.link:hover {
-    color: var(--iris);
-}
-.link:focus {
-    color: var(--iris);
-}
 /* Main page hero styles */
 .hero {
     background-color: var(--navy-blue);
 }
 .hero-name {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -68,7 +75,7 @@ body {
 /* Main page button styles */
 .btn-main {
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
@@ -80,7 +87,7 @@ body {
 }
 /* Main page advantages styles */
 .advantages-name {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -93,7 +100,7 @@ body {
 }
 /* Main page service-description styles */
 .service-description {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -102,7 +109,7 @@ body {
 }
 /* Main page team description styles */
 .team {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -110,7 +117,7 @@ body {
     text-transform: capitalize;
 }
 .person {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -126,7 +133,7 @@ body {
 /*Portfolio button styles */
 .btn-filter {
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -146,13 +153,14 @@ body {
     background-color: var(--iris);
 }
 /* Portfolio cards styles */
-.card-name {
-    font-weight: 600;
+.link .card-name {
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--navy-blue);
 }
-.card-type {
+.link .card-type {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
